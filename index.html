@@ -55,9 +55,9 @@
 
             <div>
 
-              <input id="triangle-width" class="w-24 text-2xl rounded-sm" type="text" placeholder="Width">
+              <input id="rectangle-width" class="w-24 text-2xl rounded-sm" type="text" placeholder="Width">
               <span class="text-2xl mr-2 ml-2">cm</span>
-              <input id="triangle-length" class="w-24 text-2xl rounded-sm" type="text" placeholder="Length">
+              <input id="rectangle-length" class="w-24 text-2xl rounded-sm" type="text" placeholder="Length">
               <span class="text-2xl">cm</span>
 
             </div>
@@ -73,13 +73,24 @@
         <!-- Parallelogram Calculation -->
 
         <div class="card w-85 bg-base-100 shadow-xl">
-          <figure><img src="images/parallelogram.png" alt="Shoes" />
+          <figure><img src="images/parallelogram.png" alt="Shoes"/>
           </figure>
           <div class="card-body">
             <h2 class="card-title"> Parallelogram</h2>
-            <p class="text-center">If a dog chews shoes whose shoes does he choose?</p>
+            <p class="text-center">Area (A) = b x h</p>
+            <div>
+
+              <input id="Parallelogram-base" class="w-24 text-2xl rounded-sm" type="text" placeholder="b">
+              <span class="text-2xl mr-2 ml-2">cm</span>
+              <input id="Parallelogram-height" class="w-24 text-2xl rounded-sm" type="text" placeholder="h">
+              <span class="text-2xl">cm</span>
+
+            </div>
+            <div>
+              <p class="text-2xl">Area: <span id="Parallelogram-area"></span><span>cm<sup>2</sup></span></p>
+            </div>
             <div class="card-actions">
-              <button class="btn btn-primary w-full">Calculate</button>
+              <button onclick="calculateParallelogram()" class="btn btn-primary w-full">Calculate</button>
             </div>
           </div>
         </div>
@@ -90,9 +101,21 @@
           </figure>
           <div class="card-body">
             <h2 class="card-title">Rhombus</h2>
-            <p class="text-center">If a dog chews shoes whose shoes does he choose?</p>
+            <p class="text-center">Area = 0.5 x d<sub>1</sub> x d<sub>2</sub></p>
+
+            <div>
+
+              <input id="Rhombus-base" class="w-24 text-2xl rounded-sm" type="text" placeholder="b">
+              <span class="text-2xl mr-2 ml-2">cm</span>
+              <input id="Rhombus-height" class="w-24 text-2xl rounded-sm" type="text" placeholder="h">
+              <span class="text-2xl">cm</span>
+
+            </div>
+            <div>
+              <p class="text-2xl">Area: <span id="Rhombus-area"></span><span>cm<sup>2</sup></span></p>
+            </div>
             <div class="card-actions">
-              <button class="btn btn-primary w-full">Calculate</button>
+              <button onclick="calculateRhombus()" class="btn btn-primary w-full">Calculate</button>
             </div>
           </div>
         </div>
@@ -103,9 +126,20 @@
           </figure>
           <div class="card-body">
             <h2 class="card-title">Pentagon</h2>
-            <p class="text-center">If a dog chews shoes whose shoes does he choose?</p>
+            <p class="text-center">Area = 0.5 x p x b</p>
+            <div>
+
+              <input id="Pentagon-p" class="w-24 text-2xl rounded-sm" type="text" placeholder="b">
+              <span class="text-2xl mr-2 ml-2">cm</span>
+              <input id="Pentagon-b" class="w-24 text-2xl rounded-sm" type="text" placeholder="h">
+              <span class="text-2xl">cm</span>
+
+            </div>
+            <div>
+              <p class="text-2xl">Area: <span id="Pentagon-area"></span><span>cm<sup>2</sup></span></p>
+            </div>
             <div class="card-actions">
-              <button class="btn btn-primary w-full">Calculate</button>
+              <button onclick="calculatePentagon()" class="btn btn-primary w-full">Calculate</button>
             </div>
           </div>
         </div>
@@ -116,9 +150,20 @@
           </figure>
           <div class="card-body">
             <h2 class="card-title">Ellipse</h2>
-            <p class="text-center">If a dog chews shoes whose shoes does he choose?</p>
+            <p class="text-center">Π x a x b</p>
+            <div>
+
+              <input id="Ellipse-a" class="w-24 text-2xl rounded-sm" type="text" placeholder="b">
+              <span class="text-2xl mr-2 ml-2">cm</span>
+              <input id="Ellipse-b" class="w-24 text-2xl rounded-sm" type="text" placeholder="h">
+              <span class="text-2xl">cm</span>
+
+            </div>
+            <div>
+              <p class="text-2xl">Area: <span id="Ellipse-area"></span><span>cm<sup>2</sup></span></p>
+            </div>
             <div class="card-actions">
-              <button class="btn btn-primary w-full">Calculate</button>
+              <button onclick="calculateEllipse()" class="btn btn-primary w-full">Calculate</button>
             </div>
           </div>
         </div>
@@ -132,7 +177,7 @@
       </div>
     </div>
   </main>
-  <script src="scripts/triangle.js"></script>
+  <script src="scripts/geometry.js"></script>
 </body>
 
 </html>
